@@ -5,12 +5,12 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/root/test_install
-ExecStart=/root/test_install/env/bin/gunicorn \
+WorkingDirectory=/var/www/test_install
+ExecStart=/var/www/test_install/env/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          --access-logfile /root/test_install/logs/gunicorn/access.log \
-          --error-logfile /root/test_install/logs/gunicorn/error.log \
+          --access-logfile /var/www/test_install/logs/gunicorn/access.log \
+          --error-logfile /var/www/test_install/logs/gunicorn/error.log \
           test_install.wsgi:application
 Restart=always
 [Install]

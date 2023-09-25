@@ -7,13 +7,13 @@ sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 
 virtualenv env
-source /root/test_install/env/bin/activate
-pip install -r /root/test_install/requirements.txt
+source env/bin/activate
+pip install -r requirements.txt
 
-sudo cp /root/test_install/systemd/gunicorn.service /etc/systemd/system/
-sudo cp /root/test_install/systemd/gunicorn.socket /etc/systemd/system/
+sudo cp /var/www/test_install/systemd/gunicorn.service /etc/systemd/system/
+sudo cp /var/www/test_install/systemd/gunicorn.socket /etc/systemd/system/
 
-sudo cp /root/test_install/nginx/nginx.conf /etc/nginx/sites-available/
+sudo cp /var/www/test_install/nginx/nginx.conf /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 
