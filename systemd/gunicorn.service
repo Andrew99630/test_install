@@ -9,6 +9,8 @@ WorkingDirectory=/root/test_install
 ExecStart=/root/test_install/env/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
+          --access-logfile /root/test_install/logs/gunicorn/access.log \
+          --error-logfile /root/test_install/logs/gunicorn/error.log \
           test_install.wsgi:application
 Restart=always
 [Install]
