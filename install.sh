@@ -7,8 +7,8 @@ sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 
 virtualenv env
-source root/test_install/env/bin/activate
-pip install -r requirements.txt
+source /root/test_install/env/bin/activate
+pip install -r /root/test_install/requirements.txt
 
 sudo cp /root/test_install/systemd/gunicorn.service /etc/systemd/system/
 sudo cp /root/test_install/systemd/gunicorn.socket /etc/systemd/system/
