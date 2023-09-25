@@ -1,0 +1,34 @@
+.bread {
+    width: 100%;
+}
+
+.bread ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19px;
+}
+
+.bread li:nth-child(n+2) {
+    padding-left: 10px;
+}
+
+.bread li:nth-child(n+2):before {
+    content: '/';
+    color: white;
+    padding-right: 10px;
+}
+
+.bread-link {
+    color: white;
+}
+
+.last-link {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.bread a:hover {
+    color: #f1e739;
+}

@@ -1,0 +1,16 @@
+:root {
+    font-family: "Titillium Web", "Times New Roman", sans-serif;
+    font-size: 16px;
+    --content-width: 1400px;
+    --fiolet: #bc8cff;
+    --site-green: #7ee787;
+    --task-color: #52FEFE;
+    --line-color: rgba(126, 231, 135, 0.6);
+    --card-color: #0e0c28;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top right, #0e0c28, #020111, #140f2d, #2a0845);
+}

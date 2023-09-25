@@ -17,7 +17,6 @@ sudo cp /root/test_install/nginx/nginx.conf /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 
-
 sudo systemctl daemon-reload
 sudo systemctl start gunicorn
 sudo systemctl enable gunicorn

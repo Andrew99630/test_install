@@ -1,0 +1,92 @@
+:root {
+    font-family: "Titillium Web", "Times New Roman", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top right, #0e0c28, #020111, #140f2d, #2a0845);
+}
+
+.error-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+}
+
+.error-code {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.error {
+    font-size: 8.75rem;
+    font-weight: bold;
+    color: #7ee787;
+    height: auto;
+}
+
+.error-description {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #7ee787;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-link {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: whitesmoke;
+    border: 1px solid #bc8cff;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 40%;
+    min-width: 190px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.error-link:hover {
+    background-color: #bc8cff;
+    color: white;
+}
+
+.error-link:active {
+    background-color: #8a61ff;
+    border-color: #8a61ff;
+    color: white;
+}
+
+.illustration {
+    width: 50%;
+}
+
+.illustration img {
+    width: 90%;
+}
+
+@media screen and (max-width: 1023px){
+    .illustration {
+        display: none;
+    }
+    .error-container {
+        max-width: 95%;
+    }
+    .error-code {
+        max-width: 100%;
+    }
+    .error {
+        font-size: calc(7.5rem + 1vw);
+    }
+    .error-description {
+        font-size: calc(1.625rem + 1vw);
+    }
+}
