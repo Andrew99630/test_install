@@ -5,13 +5,11 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=dbms_template_path/test_install
-ExecStart=dbms_template_path/env/bin/gunicorn \
+WorkingDirectory=/root/test_install
+ExecStart=/root/test_install/env/bin/gunicorn \
           --workers 3 \
-          --bind unix:dbms_template_path/gunicorn/gunicorn.sock \
-          test_install.wsgi:application \
-          --access-logfile dbms_template_path/gunicorn/access.log \
-          --error-logfile dbms_template_path/gunicorn/error.log
+          --bind unix:/run/gunicorn.sock \
+          test_install.wsgi:application
 Restart=always
 [Install]
 WantedBy=multi-user.target

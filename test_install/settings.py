@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m+b*^pgt3_=z=ne*&nb!rixb+@*4%1r@0&!h1x!+u*mqpevwg+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dbms_template_domain']
+ALLOWED_HOSTS = ['credit-inspector.ru']
 
 
 # Application definition
