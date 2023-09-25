@@ -19,10 +19,10 @@ virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
 
-sudo cp /systemd/gunicorn.service /etc/systemd/system/
-sudo cp /systemd/gunicorn.socket /etc/systemd/system/
+sudo cp /root/test_install/systemd/gunicorn.service /etc/systemd/system/
+sudo cp /root/test_install/systemd/gunicorn.socket /etc/systemd/system/
 
-sudo cp /nginx/nginx.conf /etc/nginx/sites-available/
+sudo cp /root/test_install/nginx/nginx.conf /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 
